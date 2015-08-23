@@ -273,7 +273,7 @@ gulp.task('buildImages', function() {
 
  // Watch Task
  gulp.task('default', ['styles', 'vendorsJs', 'scriptsJs', 'images', 'browser-sync'], function () {
- 	gulp.watch('./assets/img/raw/**/*', ['images']); //Some issue, have to run manual for now
+ 	gulp.watch('./assets/img/raw/**/*', ['images']);
  	gulp.watch('./assets/css/**/*.scss', ['styles']);
  	gulp.watch('./assets/js/**/*.js', ['scriptsJs', browserSync.reload]);
 
