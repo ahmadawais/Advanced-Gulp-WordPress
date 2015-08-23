@@ -37,7 +37,6 @@ var project 		= 'neat', // Project name, used for build zip.
 						'!assets/css/patrials/*'
 
 					];
-	// assets 		= './assets/', 	// Your main project assets and naming 'source' instead of 'src' to avoid confusion with gulp.src
 
 // Load plugins
 	var gulp     = require('gulp'),
