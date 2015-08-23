@@ -1,0 +1,8 @@
+{
+	"name"           : "neat",
+	"version"        : "1.0.0",
+	"homepage"       : "http://AhmadAwais.com",
+	"authors"        : ["Ahmad Awais"],
+	"dependencies"   : {},
+	"devDependencies": {}
+}
