@@ -103,7 +103,7 @@ gulp.task('browser-sync', function() {
  * Sass output styles: https://web-design-weekly.com/2014/06/15/different-sass-output-styles/
 */
 gulp.task('styles', function () {
-	return 	gulp.src('./assets/css/*.scss')
+	 	gulp.src('./assets/css/*.scss')
 				.pipe(plumber())
 				.pipe(sourcemaps.init())
 				.pipe(sass({
