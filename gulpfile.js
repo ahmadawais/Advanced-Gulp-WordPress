@@ -98,8 +98,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-
-
 /**
  * Styles
  *
@@ -137,7 +135,6 @@ gulp.task('styles', function () {
     .pipe($.notify({ message: 'Styles task complete', onLast: true }))
 });
 
-
 /**
  * Scripts: Vendors
  *
@@ -162,7 +159,6 @@ gulp.task('vendorsJs', function() {
  *
  * Look at src/js and concatenate those files, send them to assets/js where we then minimize the concatenated file.
  */
-
 gulp.task('scriptsJs', function() {
     return gulp.src('./assets/js/custom/*.js')
         .pipe($.concat('custom.js'))
@@ -192,7 +188,6 @@ gulp.task('images', function() {
         .pipe($.notify( { message: 'Images task complete', onLast: true } ) );
 });
 
-
 /**
  * Clean gulp cache
  */
@@ -207,7 +202,6 @@ gulp.task('clear', function () {
   * Being a little overzealous, but we're cleaning out the build folder, codekit-cache directory and annoying DS_Store files and Also
   * clearing out unoptimized image files in zip as those will have been moved and optimized
   */
-
 gulp.task('cleanup', function() {
     return gulp.src(['./assets/bower_components', '**/.sass-cache','**/.DS_Store'], { read: false }) // much faster
         .pipe($.ignore('node_modules/**')) //Example of a directory to ignore
@@ -234,10 +228,10 @@ gulp.task('buildFiles', function() {
 });
 
 /**
-* Images
-*
-* Look at src/images, optimize the images and send them to the appropriate place
-*/
+ * Images
+ *
+ * Look at src/images, optimize the images and send them to the appropriate place
+ */
 gulp.task('buildImages', function() {
     return gulp.src(['assets/img/**/*', '!assets/images/raw/**'])
         .pipe(gulp.dest(build + 'assets/img/'))
@@ -280,19 +274,19 @@ gulp.task('ftp', function () {
 
 // ==== TASKS ==== //
 /**
-* Gulp Default Task
-*
-* Compiles styles, fires-up browser sync, watches js and php files. Note browser sync task watches php files
-*
-*/
+ * Gulp Default Task
+ *
+ * Compiles styles, fires-up browser sync, watches js and php files. Note browser sync task watches php files
+ *
+ */
 
- // Package Distributable Theme
+// Package Distributable Theme
 gulp.task('build', function(cb) {
     $.runSequence('styles', 'cleanup', 'vendorsJs', 'scriptsJs',  'buildFiles', 'buildImages', 'buildZip','cleanupFinal', cb);
 });
 
 
- // Watch Task
+// Watch Task
 gulp.task('default', ['styles', 'vendorsJs', 'scriptsJs', 'images', 'browser-sync'], function () {
     gulp.watch('./assets/img/raw/**/*', ['images']);
     gulp.watch('./assets/css/**/*.scss', ['styles']);
