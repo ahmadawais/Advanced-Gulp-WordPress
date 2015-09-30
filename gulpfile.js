@@ -34,7 +34,7 @@ var project 		= 'neat', // Project name, used for build zip.
 				'!assets/bower_components/**/*',
 				'!style.css.map',
 				'!assets/js/custom/*',
-				'!assets/css/patrials/*'
+				'!assets/css/partials/*'
 
 			];
 
