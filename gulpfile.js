@@ -203,7 +203,7 @@ gulp.task('clear', function () {
   * clearing out unoptimized image files in zip as those will have been moved and optimized
   */
 gulp.task('cleanup', function() {
-    return gulp.src(['./assets/bower_components', '**/.sass-cache','**/.DS_Store'], { read: false }) // much faster
+    return gulp.src(['./assets/bower_components', '**/.sass-cache','**/.DS_Store', build, project + '.zip'], { read: false }) // much faster
         .pipe($.ignore('node_modules/**')) //Example of a directory to ignore
         .pipe($.rimraf({ force: true }))
         //.pipe(notify({ message: 'Clean task complete', onLast: true }));
