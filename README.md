@@ -6,9 +6,10 @@ An Advanced Gulp Workflow for WordPress themes.
 Features
 --------
 
-- Saas
-- Gulp
-- Bower
+- Gulp 
+- Sass for CSS
+- Auto Image optimization
+- Bower  for assets management
 - Lean PHP files with next to no syntax
 - Custom architecture design
 - Theme zip file build with Gulp
