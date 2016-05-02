@@ -275,6 +275,6 @@ gulp.task('buildImages', function() {
  gulp.task('default', ['styles', 'vendorsJs', 'scriptsJs', 'images', 'browser-sync'], function () {
  	gulp.watch('./assets/img/raw/**/*', ['images']);
  	gulp.watch('./assets/css/**/*.scss', ['styles']);
- 	gulp.watch('./assets/js/**/*.js', ['scriptsJs', browserSync.reload]);
+ 	gulp.watch('./assets/js/**/*.js', ['scriptsJs', reload]);
 
  });
