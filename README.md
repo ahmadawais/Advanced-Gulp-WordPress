@@ -1,3 +1,5 @@
+[❌Deprecated in favour of WPGulp https://github.com/ahmadawais/WPGulp | STAR/FORK WPGulp instead] 
+
 Advanced Gulp WordPress
 ===
 
@@ -39,3 +41,5 @@ Getting and Installing the Theme
 License
 --------
 Neat was released under GPL v2.
+
+[❌Deprecated in favour of WPGulp https://github.com/ahmadawais/WPGulp | STAR/FORK WPGulp instead] 
