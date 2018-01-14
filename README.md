@@ -3,6 +3,8 @@
 Advanced Gulp WordPress
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmadawais/Advanced-Gulp-WordPress.svg)](https://greenkeeper.io/)
+
 An Advanced Gulp Workflow for WordPress themes.
 
 Features
